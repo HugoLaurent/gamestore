@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:gamestore/pages/home/widgets/header.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -31,8 +31,10 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Column(
-              children: [],
+            const Column(
+              children: [
+                HeaderSection(),
+              ],
             ),
           ],
         ),
@@ -41,6 +43,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Widget NavigationBar() {
     return Container(
       color: const Color(0xfff6f8ff),
